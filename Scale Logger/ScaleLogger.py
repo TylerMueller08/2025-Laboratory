@@ -11,8 +11,8 @@ ser = serial.Serial(SERIAL_PORT, BAUD_RATE)
 currentDate = datetime.datetime.now()
 currentTime = currentDate.strftime("%m-%d-%Y %I-%M%p")
 
-with open(f"C:/Users/Admin/Desktop/2025 Laboratory/Scale Logger/Results/Scale Data from {currentTime}.csv", mode='w', newline='') as file:
-    print(f"Connected to {SERIAL_PORT} at {BAUD_RATE} baud")
+with open(f"C:/Users/Admin/Desktop/2025 Laboratory/Scale Logger/Results/Unlabeled Scale Data from {currentTime}.csv", mode='w', newline='') as file:
+    print(f"Connected to {SERIAL_PORT} at {BAUD_RATE} baud.")
     
     writer = csv.writer(file)
     writer.writerow(["WEIGHT_GRAMS"])
